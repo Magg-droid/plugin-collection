@@ -3,7 +3,7 @@
     "Author": "Magg-droid",
     "Name": "Wardrobe",
     "InternalName": "Wardrobe",
-    "AssemblyVersion": "0.0.0.1",
+    "AssemblyVersion": "0.1.0.0",
     "Description": "A visual companion for Glamourer with outfit thumbnails, collections, and one-click application.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Magg-droid/Wardrobe",
