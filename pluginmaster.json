@@ -1,0 +1,39 @@
+[
+  {
+    "Author": "Magg-droid",
+    "Name": "Wardrobe",
+    "InternalName": "Wardrobe",
+    "AssemblyVersion": "0.0.0.1",
+    "Description": "A visual companion for Glamourer with outfit thumbnails, collections, and one-click application.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Magg-droid/Wardrobe",
+    "Tags": [
+      "glamourer",
+      "wardrobe",
+      "outfits",
+      "gallery",
+      "ui"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "Browse and apply Glamourer outfits visually.",
+    "AcceptsFeedback": true,
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/Magg-droid/Wardrobe/releases/latest/download/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Magg-droid/Wardrobe/releases/latest/download/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Magg-droid/Wardrobe/releases/latest/download/latest.zip",
+    "DownloadCount": 0,
+    "LastUpdate": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Magg-droid/Wardrobe/main/Data/goat.png",
+    "ImageUrls": [
+      "https://raw.githubusercontent.com/Magg-droid/Wardrobe/main/docs/images/gallery.png",
+      "https://raw.githubusercontent.com/Magg-droid/Wardrobe/main/docs/images/collections.png",
+      "https://raw.githubusercontent.com/Magg-droid/Wardrobe/main/docs/images/design-card.png"
+    ],
+    "Changelog": "Initial alpha release with visual gallery browsing, collection organization, thumbnail support, and one-click Glamourer outfit actions."
+  }
+]
