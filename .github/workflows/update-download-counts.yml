@@ -1,0 +1,49 @@
+   name: Update Download Counts
+
+   on:
+     schedule:
+       - cron: '0 0 * * *'  # runs daily
+     workflow_dispatch:      # allows manual trigger
+
+   jobs:
+     update:
+       runs-on: ubuntu-latest
+       permissions:
+         contents: write
+       steps:
+         - uses: actions/checkout@v4
+
+         - name: Update download counts
+           run: |
+             # Read the pluginmaster.json
+             plugins=$(cat pluginmaster.json)
+
+             # For each plugin, query GitHub for release download counts
+             # and sum them up
+             for internal_name in $(echo "$plugins" | jq -r '.[].InternalName'); do
+               repo_url=$(echo "$plugins" | jq -r ".[] | select(.InternalName==\"$internal_name\") | .RepoUrl")
+               repo_path=$(echo "$repo_url" | sed 's|https://github.com/||')
+
+               # Sum download counts from all releases
+               total=$(curl -s "https://api.github.com/repos/$repo_path/releases?per_page=100" | \
+                 jq '[.[].assets[].download_count] | add // 0')
+
+               echo "$internal_name: $total downloads"
+
+               # Update the JSON in-place
+               plugins=$(echo "$plugins" | jq \
+                 --arg name "$internal_name" \
+                 --argjson count "$total" \
+                 'map(if .InternalName == $name then .DownloadCount = $count else . end)')
+             done
+
+             echo "$plugins" > pluginmaster.json
+
+         - name: Commit changes
+           run: |
+             git config user.name "github-actions[bot]"
+             git config user.email "github-actions[bot]@users.noreply.github.com"
+             git add pluginmaster.json
+             git diff --staged --quiet || git commit -m "Update download counts"
+             git push
+ 
