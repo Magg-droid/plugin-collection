@@ -35,6 +35,6 @@
       "https://raw.githubusercontent.com/Magg-droid/Vestiary/main/docs/images/collections.png",
       "https://raw.githubusercontent.com/Magg-droid/Vestiary/main/docs/images/design-card.png"
     ],
-    "Changelog": "Initial alpha release with visual gallery browsing, collection organization, thumbnail support, and one-click Glamourer outfit actions."
+    "Changelog": "Fixed error during installation"
   }
 ]
