@@ -2,7 +2,7 @@
   {
     "Author": "Maggie",
     "Name": "Vestiary",
-    "InternalName": "Vestiary",
+    "InternalName": "Wardrobe",
     "AssemblyVersion": "1.0.0.9",
     "Description": "A visual companion for Glamourer with outfit thumbnails, collections, and one-click application.",
     "ApplicableVersion": "any",
