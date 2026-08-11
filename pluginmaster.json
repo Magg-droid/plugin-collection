@@ -1,8 +1,8 @@
 [
   {
     "Author": "Magg-droid",
-    "Name": "Wardrobe",
-    "InternalName": "Wardrobe",
+    "Name": "Vestiary",
+    "InternalName": "Vestiary",
     "AssemblyVersion": "1.0.0.9",
     "Description": "A visual companion for Glamourer with outfit thumbnails, collections, and one-click application.",
     "ApplicableVersion": "any",
@@ -10,6 +10,7 @@
     "Tags": [
       "glamourer",
       "wardrobe",
+      "vestiary",
       "outfits",
       "gallery",
       "ui"
