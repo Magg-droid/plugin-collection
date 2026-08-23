@@ -35,6 +35,6 @@
       "https://raw.githubusercontent.com/Magg-droid/Vestiary/main/docs/images/collections.png",
       "https://raw.githubusercontent.com/Magg-droid/Vestiary/main/docs/images/design-card.png"
     ],
-    "Changelog": "Added sorting based on date and recently applied"
+    "Changelog": "Added glamour tags as a way of making collection. Fixed thumbnail paths for linux users when using snapshot"
   }
 ]
